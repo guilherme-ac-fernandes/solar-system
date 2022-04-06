@@ -15,9 +15,11 @@ class MissionCard extends React.Component {
   }
 }
 
-// PlanetCard.propTypes = {
-//   planetName: PropTypes.string.isRequired,
-//   planetImage: PropTypes.string.isRequired, // O caminho até a imagem é string (Ajuda da Amanda Soares e Instrutor Moisés Santana)
-// };
+MissionCard.propTypes = {
+  name: PropTypes.string.isRequired,
+  year: PropTypes.string.isRequired,
+  country: PropTypes.string.isRequired,
+  destination: PropTypes.string.isRequired,
+};
 
 export default MissionCard;

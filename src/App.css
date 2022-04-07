@@ -88,26 +88,21 @@
   width: 134px;
 }
 
-.container-mission {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.container-planet-card, .container-mission {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
 .container-planet-card {
+  display: flex;
+  flex-wrap: wrap;
   height: 400px;
+  justify-content: space-around;
   width: 100%;
 }
 
-/* .container-mission {
-  width: 80%;
+.container-mission {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   margin: 30px auto;
-} */
+  width: 80%;
+}
 
 .planet-card {
   align-items: center;
@@ -120,8 +115,6 @@
   color: white;
   font-family: Epilogue , sans-serif;
   font-size: 16px;
-
-  /* font-size: 20px; */
   font-style: normal;
   font-weight: 400;
   line-height: 150%;

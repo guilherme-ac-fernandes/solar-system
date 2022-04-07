@@ -4,10 +4,12 @@ import PropTypes from 'prop-types';
 class PlanetCard extends React.Component {
   render() {
     const { planetName, planetImage } = this.props;
+    const imgTest = `Planeta ${planetName}`;
+    const classImage = `img-${planetName.toLowerCase()}`;
     return (
-      <div data-testid="planet-card">
+      <div data-testid="planet-card" className="planet-card">
         <p data-testid="planet-name">{planetName}</p>
-        <img src={ planetImage } alt={ `Planeta ${planetName}` } />
+        <img src={ planetImage } alt={ imgTest } className={ classImage } />
       </div>
     );
   }

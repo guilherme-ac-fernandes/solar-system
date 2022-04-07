@@ -9,7 +9,9 @@ class Missions extends React.Component {
       <div data-testid="missions">
         <Title headline="Missões" />
         {/* A utilização do spread passando o valores do item possibilita informar os dados sem a necessidade de endereçar (Solução proveniente Instrutor Moisés Santana) */}
-        {mission.map((item) => <MissionCard key={ item.name } { ...item } />)}
+        <div className="container-mission">
+          {mission.map((item) => <MissionCard key={ item.name } { ...item } />)}
+        </div>
       </div>
     );
   }
